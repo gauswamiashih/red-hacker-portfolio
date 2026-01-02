@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gauswami's - Red Hacker | Personal Portfolio & Cybersecurity Expert">
+    <meta name="keywords" content="red hacker, cybersecurity, ethical hacking, penetration testing, security researcher">
+    <title>Gauswami's | Red Hacker</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-text">Gauswami's</span>
+                <span class="logo-badge">Red Hacker</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="matrix-rain"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge" data-animate="fade-up">
+                    <i class="fas fa-shield-halved"></i>
+                    <span>Ethical Hacker & Security Researcher</span>
+                </div>
+                <h1 class="hero-title" data-animate="fade-up" data-delay="100">
+                    Welcome to the <span class="gradient-text">Red Team</span>
+                </h1>
+                <p class="hero-subtitle" data-animate="fade-up" data-delay="200">
+                    I break systems to make them stronger. Specializing in penetration testing, 
+                    vulnerability assessment, and cybersecurity consulting.
+                </p>
+                <div class="hero-buttons" data-animate="fade-up" data-delay="300">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Hire Me</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <span>View Work</span>
+                        <i class="fas fa-code"></i>
+                    </a>
+                </div>
+                <div class="hero-stats" data-animate="fade-up" data-delay="400">
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p>Systems Tested</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>200+</h3>
+                        <p>Vulnerabilities Found</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual" data-animate="fade-left" data-delay="200">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="btn-red"></span>
+                            <span class="btn-yellow"></span>
+                            <span class="btn-green"></span>
+                        </div>
+                        <div class="terminal-title">terminal@gauswami:~</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">sudo nmap -sV -O target.com</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="output">Starting Nmap 7.94...</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="output success">PORT    STATE SERVICE</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="output success">22/tcp  open  ssh</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="output success">80/tcp  open  http</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="output success">443/tcp open  https</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command typing">whoami</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="output highlight">red_hacker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" data-animate="fade-up" data-delay="500">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-badge">Who Am I</span>
+                <h2 class="section-title">About <span class="gradient-text">Gauswami</span></h2>
+                <p class="section-description">
+                    A passionate cybersecurity professional dedicated to protecting digital assets
+                </p>
+            </div>
+            <div class="about-content">
+                <div class="about-image" data-animate="fade-right">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=800&fit=crop" alt="Gauswami">
+                        <div class="image-overlay">
+                            <div class="overlay-text">Red Hacker</div>
+                        </div>
+                    </div>
+                    <div class="floating-badge">
+                        <i class="fas fa-user-shield"></i>
+                        <span>Certified Professional</span>
+                    </div>
+                </div>
+                <div class="about-text" data-animate="fade-left">
+                    <h3>Cybersecurity Expert & Ethical Hacker</h3>
+                    <p>
+                        With over 5 years of experience in cybersecurity, I specialize in identifying 
+                        vulnerabilities before malicious actors can exploit them. My mission is to help 
+                        organizations build robust security infrastructure.
+                    </p>
+                    <p>
+                        I've worked with Fortune 500 companies, startups, and government agencies to 
+                        secure their digital assets. My approach combines technical expertise with 
+                        strategic thinking to deliver comprehensive security solutions.
+                    </p>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-bug"></i>
+                            <div>
+                                <h4>Penetration Testing</h4>
+                                <p>Advanced exploitation techniques</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-shield-virus"></i>
+                            <div>
+                                <h4>Vulnerability Assessment</h4>
+                                <p>Comprehensive security audits</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-network-wired"></i>
+                            <div>
+                                <h4>Network Security</h4>
+                                <p>Infrastructure protection</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h4>Secure Coding</h4>
+                                <p>Application security</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="certifications">
+                        <h4>Certifications</h4>
+                        <div class="cert-badges">
+                            <span class="cert-badge">CEH</span>
+                            <span class="cert-badge">OSCP</span>
+                            <span class="cert-badge">CISSP</span>
+                            <span class="cert-badge">Security+</span>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Let's Talk Security</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-badge">What I Do</span>
+                <h2 class="section-title">My <span class="gradient-text">Services</span></h2>
+                <p class="section-description">
+                    Comprehensive cybersecurity solutions tailored to your needs
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-animate="fade-up" data-delay="0">
+                    <div class="service-icon">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <h3>Penetration Testing</h3>
+                    <p>
+                        Simulate real-world attacks to identify vulnerabilities in your systems, 
+                        networks, and applications before hackers do.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Web Application Testing</li>
+                        <li><i class="fas fa-check"></i> Network Penetration</li>
+                        <li><i class="fas fa-check"></i> Mobile App Security</li>
+                        <li><i class="fas fa-check"></i> Social Engineering</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card featured" data-animate="fade-up" data-delay="100">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h3>Security Consulting</h3>
+                    <p>
+                        Strategic guidance to build a robust security posture and protect 
+                        your organization from evolving threats.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Risk Assessment</li>
+                        <li><i class="fas fa-check"></i> Security Architecture</li>
+                        <li><i class="fas fa-check"></i> Compliance Audit</li>
+                        <li><i class="fas fa-check"></i> Incident Response</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card" data-animate="fade-up" data-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Secure Code Review</h3>
+                    <p>
+                        In-depth analysis of your source code to identify security flaws 
+                        and ensure best practices are followed.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Static Analysis</li>
+                        <li><i class="fas fa-check"></i> Manual Code Review</li>
+                        <li><i class="fas fa-check"></i> OWASP Top 10</li>
+                        <li><i class="fas fa-check"></i> Remediation Guide</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card" data-animate="fade-up" data-delay="0">
+                    <div class="service-icon">
+                        <i class="fas fa-radar"></i>
+                    </div>
+                    <h3>Threat Intelligence</h3>
+                    <p>
+                        Stay ahead of cyber threats with real-time intelligence and 
+                        proactive monitoring of your digital footprint.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Dark Web Monitoring</li>
+                        <li><i class="fas fa-check"></i> Threat Hunting</li>
+                        <li><i class="fas fa-check"></i> IOC Detection</li>
+                        <li><i class="fas fa-check"></i> Security Reports</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card" data-animate="fade-up" data-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Security Training</h3>
+                    <p>
+                        Empower your team with cybersecurity knowledge through hands-on 
+                        training and awareness programs.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Security Awareness</li>
+                        <li><i class="fas fa-check"></i> Phishing Simulations</li>
+                        <li><i class="fas fa-check"></i> Technical Workshops</li>
+                        <li><i class="fas fa-check"></i> Red Team Training</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card" data-animate="fade-up" data-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-file-shield"></i>
+                    </div>
+                    <h3>Compliance & Audit</h3>
+                    <p>
+                        Ensure your organization meets industry standards and regulatory 
+                        requirements with comprehensive audits.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> GDPR Compliance</li>
+                        <li><i class="fas fa-check"></i> ISO 27001</li>
+                        <li><i class="fas fa-check"></i> PCI DSS</li>
+                        <li><i class="fas fa-check"></i> SOC 2</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-badge">Portfolio</span>
+                <h2 class="section-title">Recent <span class="gradient-text">Projects</span></h2>
+                <p class="section-description">
+                    Real-world cybersecurity engagements and success stories
+                </p>
+            </div>
+
+            <div class="projects-filter" data-animate="fade-up">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="pentest">Penetration Testing</button>
+                <button class="filter-btn" data-filter="webapp">Web Security</button>
+                <button class="filter-btn" data-filter="network">Network Security</button>
+                <button class="filter-btn" data-filter="research">Research</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card" data-category="pentest" data-animate="fade-up" data-delay="0">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&h=600&fit=crop" alt="Banking System Penetration Test">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-tag">Penetration Testing</span>
+                            <span class="project-date">Jan 2026</span>
+                        </div>
+                        <h3>Banking System Security Audit</h3>
+                        <p>
+                            Conducted comprehensive penetration testing for a major banking institution, 
+                            identifying critical vulnerabilities in their online banking platform.
+                        </p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-bug"></i>
+                                <span>25 Vulnerabilities</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-clock"></i>
+                                <span>3 Weeks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="webapp" data-animate="fade-up" data-delay="100">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=600&fit=crop" alt="E-commerce Security">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-tag">Web Security</span>
+                            <span class="project-date">Dec 2025</span>
+                        </div>
+                        <h3>E-commerce Platform Hardening</h3>
+                        <p>
+                            Secured a high-traffic e-commerce platform processing millions in daily 
+                            transactions, implementing WAF and secure payment gateway.
+                        </p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Zero Breaches</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-users"></i>
+                                <span>1M+ Users</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="network" data-animate="fade-up" data-delay="200">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop" alt="Enterprise Network Security">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-tag">Network Security</span>
+                            <span class="project-date">Nov 2025</span>
+                        </div>
+                        <h3>Enterprise Network Redesign</h3>
+                        <p>
+                            Redesigned network architecture for a Fortune 500 company, implementing 
+                            zero-trust security model and segmentation.
+                        </p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-network-wired"></i>
+                                <span>500+ Devices</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-chart-line"></i>
+                                <span>99.9% Uptime</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="research" data-animate="fade-up" data-delay="0">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=800&h=600&fit=crop" alt="Zero-Day Research">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-tag">Research</span>
+                            <span class="project-date">Oct 2025</span>
+                        </div>
+                        <h3>Zero-Day Vulnerability Discovery</h3>
+                        <p>
+                            Discovered and responsibly disclosed a critical zero-day vulnerability 
+                            affecting millions of IoT devices worldwide.
+                        </p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-trophy"></i>
+                                <span>CVE Assigned</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>Bug Bounty</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="pentest" data-animate="fade-up" data-delay="100">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=600&fit=crop" alt="Mobile App Security">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-tag">Mobile Security</span>
+                            <span class="project-date">Sep 2025</span>
+                        </div>
+                        <h3>Healthcare Mobile App Testing</h3>
+                        <p>
+                            Security assessment of a healthcare mobile application handling sensitive 
+                            patient data, ensuring HIPAA compliance.
+                        </p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>iOS & Android</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-check-circle"></i>
+                                <span>HIPAA Certified</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="webapp" data-animate="fade-up" data-delay="200">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=600&fit=crop" alt="API Security">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-tag">API Security</span>
+                            <span class="project-date">Aug 2025</span>
+                        </div>
+                        <h3>RESTful API Penetration Test</h3>
+                        <p>
+                            Comprehensive security testing of microservices architecture and REST APIs 
+                            for a fintech startup.
+                        </p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-code"></i>
+                                <span>50+ Endpoints</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-lock"></i>
+                                <span>OAuth 2.0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-badge">Client Feedback</span>
+                <h2 class="section-title">What Clients <span class="gradient-text">Say</span></h2>
+                <p class="section-description">
+                    Trusted by industry leaders and security-conscious organizations
+                </p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-animate="fade-up" data-delay="0">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Gauswami's expertise in penetration testing helped us identify critical 
+                        vulnerabilities we didn't know existed. His thorough approach and detailed 
+                        reporting gave us a clear roadmap to improve our security posture."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/150?img=12" alt="John Mitchell">
+                        <div class="author-info">
+                            <h4>John Mitchell</h4>
+                            <p>CTO, TechCorp Industries</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card featured" data-animate="fade-up" data-delay="100">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Working with Gauswami was a game-changer for our startup. He not only 
+                        secured our platform but also educated our team on security best practices. 
+                        Highly recommend his services!"
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/150?img=47" alt="Sarah Chen">
+                        <div class="author-info">
+                            <h4>Sarah Chen</h4>
+                            <p>CEO, SecureStart Inc</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-animate="fade-up" data-delay="200">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Professional, knowledgeable, and incredibly thorough. Gauswami's security 
+                        audit revealed issues we never considered. His recommendations were practical 
+                        and easy to implement."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/150?img=33" alt="Michael Roberts">
+                        <div class="author-info">
+                            <h4>Michael Roberts</h4>
+                            <p>Security Director, FinanceHub</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-animate="fade-up" data-delay="0">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Gauswami helped us achieve compliance with industry standards while 
+                        improving our overall security. His consulting services are worth every 
+                        penny. A true professional!"
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/150?img=65" alt="Emily Parker">
+                        <div class="author-info">
+                            <h4>Emily Parker</h4>
+                            <p>Compliance Officer, HealthTech Solutions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-animate="fade-up" data-delay="100">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Outstanding work on our network security redesign. Gauswami's expertise 
+                        in zero-trust architecture transformed our infrastructure. Couldn't be 
+                        happier with the results."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/150?img=14" alt="David Kumar">
+                        <div class="author-info">
+                            <h4>David Kumar</h4>
+                            <p>IT Manager, GlobalTech Enterprise</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-animate="fade-up" data-delay="200">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "His security training program transformed our team's awareness. The 
+                        phishing simulations and workshops were eye-opening. We're now much more 
+                        vigilant about security."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/150?img=20" alt="Lisa Anderson">
+                        <div class="author-info">
+                            <h4>Lisa Anderson</h4>
+                            <p>HR Director, DataSafe Corp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-badge">Get In Touch</span>
+                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                <p class="section-description">
+                    Ready to secure your digital assets? Let's discuss your security needs
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info" data-animate="fade-right">
+                    <h3>Contact Information</h3>
+                    <p>
+                        Have a security concern or need a consultation? Feel free to reach out. 
+                        I'm always happy to discuss cybersecurity challenges.
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <a href="/cdn-cgi/l/email-protection#204741555357414d4941534849534817161060474d41494c0e434f4d"><span class="__cf_email__" data-cfemail="54333521272335393d35273c3d273c636264143339353d387a373b39">[email&#160;protected]</span></a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <a href="tel:+919664592743">+91 9664592743</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>Available Worldwide (Remote)</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Availability</h4>
+                                <p>Mon - Fri: 9:00 AM - 6:00 PM IST</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>Follow Me</h4>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/gauswami_8_07_18?igsh=MXQxMmdqM3A2YXN0ZQ==" target="_blank" class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form" data-animate="fade-left">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Required</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="penetration-testing">Penetration Testing</option>
+                            <option value="security-consulting">Security Consulting</option>
+                            <option value="code-review">Secure Code Review</option>
+                            <option value="threat-intelligence">Threat Intelligence</option>
+                            <option value="training">Security Training</option>
+                            <option value="compliance">Compliance & Audit</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-text">Gauswami's</span>
+                        <span class="logo-badge">Red Hacker</span>
+                    </div>
+                    <p>
+                        Protecting digital assets through ethical hacking and comprehensive 
+                        cybersecurity solutions.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/gauswami_8_07_18?igsh=MXQxMmdqM3A2YXN0ZQ==" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Penetration Testing</a></li>
+                        <li><a href="#services">Security Consulting</a></li>
+                        <li><a href="#services">Code Review</a></li>
+                        <li><a href="#services">Training</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to get security tips and updates</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gauswami's Red Hacker. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Security Disclosure</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Lenis Smooth Scroll -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
