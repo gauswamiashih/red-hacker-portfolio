@@ -5,24 +5,19 @@
 
 // ===== LENIS SMOOTH SCROLL INITIALIZATION =====
 const lenis = new Lenis({
-    duration: 1.2,
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-    direction: 'vertical',
-    gestureDirection: 'vertical',
-    smooth: true,
-    mouseMultiplier: 1,
-    smoothTouch: false,
-    touchMultiplier: 2,
-    infinite: false,
-});
+  duration: 1.1,
+  easing: (t) => 1 - Math.pow(1 - t, 3),
+  smooth: true,
+  smoothWheel: true,
+  smoothTouch: false,
+  lerp: 0.08
+})
 
-// Request Animation Frame for Lenis
 function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
+  lenis.raf(time)
+  requestAnimationFrame(raf)
 }
-
-requestAnimationFrame(raf);
+requestAnimationFrame(raf)
 
 // Stop Lenis on specific elements
 lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
@@ -70,7 +65,7 @@ navLinks.forEach(link => {
         if (targetSection) {
             lenis.scrollTo(targetSection, {
                 offset: -80,
-                duration: 1.5
+                duration: 1.0
             });
         }
     });
@@ -134,7 +129,7 @@ window.addEventListener('scroll', () => {
 
 scrollTopBtn.addEventListener('click', () => {
     lenis.scrollTo('top', {
-        duration: 2
+        duration: 1.5
     });
 });
 
@@ -394,7 +389,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             e.preventDefault();
             lenis.scrollTo(target, {
                 offset: -80,
-                duration: 1.5
+                duration: 1.1
             });
         }
     });
@@ -529,5 +524,35 @@ document.addEventListener('keydown', (e) => {
         }
     }
 });
+
+lenis.on('scroll', ({ scroll }) => {
+
+  // Navbar
+  if (scroll > 50) {
+    navbar.classList.add('scrolled')
+  } else {
+    navbar.classList.remove('scrolled')
+  }
+
+  // Scroll to top button
+  if (scroll > 500) {
+    scrollTopBtn.classList.add('visible')
+  } else {
+    scrollTopBtn.classList.remove('visible')
+  }
+
+  // Parallax (LIGHT)
+  if (scroll < window.innerHeight) {
+    heroVisual?.style.setProperty(
+      'transform',
+      `translateY(${scroll * 0.25}px)`
+    )
+    heroContent?.style.setProperty(
+      'transform',
+      `translateY(${scroll * 0.1}px)`
+    )
+  }
+})
+
 
 console.log('%c✨ Website fully loaded and optimized!', 'color: #00D4FF; font-size: 14px; font-weight: bold;');
